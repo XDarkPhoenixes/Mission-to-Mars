@@ -103,9 +103,6 @@ def hemispheres(browser):
     url = 'https://marshemispheres.com/'
     browser.visit(url)
 
-    html = browser.html
-    hemi_soup = soup(html, 'html.parser')
-
     hemisphere_image_urls = []
     try:
         for i in range(4):
